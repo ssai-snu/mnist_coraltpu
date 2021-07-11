@@ -18,7 +18,7 @@ def generate_svg(size, text_lines):
 
 def main():
     default_model_dir = './'
-    default_model = 'mnist_model.tflite'
+    default_model = 'mnist_model_edgetpu.tflite'
     default_labels = 'labels.txt'
     parser = argparse.ArgumentParser()
     parser.add_argument('--model', help='.tflite model path',
