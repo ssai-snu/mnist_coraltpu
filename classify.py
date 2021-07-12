@@ -22,6 +22,8 @@ def main():
                       help='Max number of classification results')
   parser.add_argument('-t', '--threshold', type=float, default=0.0,
                       help='Classification score threshold')
+  parser.add_argument('-c', '--count', type=int, default=5,
+                      help='Number of times to run inference')
   args = parser.parse_args()
 
   labels = read_label_file(args.labels) if args.labels else {}
